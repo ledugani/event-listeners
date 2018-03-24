@@ -74,3 +74,11 @@ const buildDomString = (studentArray) => {
 }
 
 buildDomString(students);
+
+const allTheButtons = document.getElementsByClassName('card-button');
+
+for (let i = 0; i < allTheButtons.length; i++) {
+    allTheButtons[i].addEventListener('click', (e) => {
+        console.log('event', e)
+    });
+}
